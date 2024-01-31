@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_2/screens/card_example_screen/card_example_screen.dart';
+import 'package:project_2/screens/card_example_screen/widgets/task_3.dart';
 import 'package:project_2/screens/card_example_screen/widgets/threerows_twocolumns.dart';
 import 'package:project_2/task_1.dart';
 
@@ -39,6 +40,15 @@ class MainScreen extends StatelessWidget {
                 ));
               },
               child: const Text("Go to Second Task")),
+          TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const ThirdTask();
+                  },
+                ));
+              },
+              child: const Text("Go to Third Task")),
         ],
       ),
     );
